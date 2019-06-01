@@ -1,0 +1,18 @@
+/*
+ * smp用css
+ */
+
+ //変数インポート
+@import 'common_variable.scss';
+
+body {
+    svg {
+        background-color: #3b469a;
+        height: 73px;
+        width: 93px;
+    }
+    background-color: green;
+    p {
+        color: blue;
+    }
+}

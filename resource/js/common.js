@@ -1,0 +1,1 @@
+"use strict";var testFunk=function(){console.log("ap")};

@@ -1,0 +1,65 @@
+/*
+ * pc,smp共通css
+*/
+
+//変数インポート
+@import 'common_variable.scss';
+
+//
+body {
+    color: $TEXT-COLOR;
+    margin: 0;
+}
+
+
+header {
+    background-color: #fff;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: $TEXT-COLOR;
+    text-decoration: none;
+}
+
+p,
+h2 {
+    font-family: "Noto Sans CJ Kjp";
+}
+
+p {
+    margin: 0;
+}
+
+footer {
+    color: #fff;
+    background-color: #222a4e;
+
+    a {
+        color: #fff;
+    }
+}
+
+// ** お知らせセミナー情報 **
+.news_box {
+    .label {
+        color: #fff;
+        text-align: center;
+        vertical-align: middle;
+
+        &.info {
+            background-color: #a3a4a8;
+        }
+        &.seminar {
+            background-color: #5862a9;
+        }
+        &.event {
+            background-color: #c85c6e;
+        }
+    }
+}
