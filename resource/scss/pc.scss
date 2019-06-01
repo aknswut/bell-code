@@ -5,7 +5,7 @@
  //変数インポート
 @import 'common_variable.scss';
 $ROTATE_NUM: 20deg;
-$SITE-WIDTH: 1440px;//1440
+$SITE-WIDTH: 1440px;//100%表示でできるように修正したい
 
 body {
     background-color: #fff;
