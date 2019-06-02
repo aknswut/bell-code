@@ -34,7 +34,7 @@
 }
  
  h2 {
-     font-size: 24px;
+     font-size: 48px;
      font-weight: 400;
      margin: 0;
      padding: 30px;
@@ -51,7 +51,7 @@
          left: 50%;
          transform: translateX(-50%);
          -webkit-transform: translateX(-50%);
-         width: 24px;
+         width: 48px;
          
      }
  }
@@ -99,7 +99,7 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 30px;
 
     .header_content {
             
@@ -147,7 +147,7 @@
  
              .list_txt {
                  color: $SITE-COLOR;
-                 font-size: 11px;
+                 font-size: 22px;
                  font-weight: 600;                           
              }
          }
@@ -187,14 +187,14 @@
          ,.title_solution
          ,.title_service {
              display: table;
-             height: 160px;
+             height: 38vw;
              margin: 0;
              width: 100%;
  
              >span {
                  color: #fff;
                  display: table-cell;
-                 font-size: 17px;
+                 font-size: 34px;
                  padding: 0 0 20px 20px;
                  vertical-align: bottom;
              }
@@ -231,16 +231,16 @@
              }
 
              &::after {
-                border-top: 2px solid $SITE-COLOR;
-                border-right: 2px solid $SITE-COLOR;
+                border-top: 4px solid $SITE-COLOR;
+                border-right: 4px solid $SITE-COLOR;
                 content: '';
                 display: inline-block;
-                height: 8px;
+                height: 20px;
                 position: absolute;
-                top: 17px;
+                top: 27%;
                 transform: rotate(135deg);
-                right: 19px;
-                width: 8px;
+                right: 40px;
+                width: 20px;
             }
          }
  
@@ -258,16 +258,16 @@
              }
  
              &::after {
-                 border-top: 2px solid $SITE-COLOR;
-                 border-right: 2px solid $SITE-COLOR;
+                 border-top: 4px solid $SITE-COLOR;
+                 border-right: 4px solid $SITE-COLOR;
                  content: '';
                  display: inline-block;
-                 height: 8px;
+                 height: 20px;
                  position: absolute;
-                 top: 30px;
+                 top: 37%;
                  transform: rotate(45deg);
-                 right: 22px;
-                 width: 8px;
+                 right: 43px;
+                 width: 20px;
              }
          }
  
@@ -284,16 +284,16 @@
                  }
  
                  &::after {
-                     border-top: 1px solid $SITE-COLOR;
-                     border-right: 1px solid $SITE-COLOR;
+                     border-top: 2px solid $SITE-COLOR;
+                     border-right: 2px solid $SITE-COLOR;
                      content: '';
                      display: inline-block;
-                     height: 5px;
+                     height: 15px;
                      position: absolute;
-                     top: 19px;
+                     top: 37%;
                      transform: rotate(45deg);
-                     right: 23px;
-                     width: 5px;
+                     right: 45px;
+                     width: 15px;
                  }
              }
              .product_list {
@@ -320,7 +320,7 @@
  
              li {
                  display: table;
-                 font-size: 13px;
+                 font-size: 26px;
                  padding: 10px 0 5px;
                  position: relative;
                  text-align: left;
@@ -331,16 +331,16 @@
                  }
  
                  &::after {
-                     border-top: 2px solid $SITE-COLOR;
-                     border-right: 2px solid $SITE-COLOR;
+                     border-top: 4px solid $SITE-COLOR;
+                     border-right: 4px solid $SITE-COLOR;
                      content: '';
                      display: inline-block;
-                     height: 8px;
+                     height: 15px;
                      position: absolute;
                      top: 45%;
                      transform: rotate(45deg);
                      right: 6px;
-                     width: 8px;
+                     width: 15px;
                  }
  
                  & + li {
@@ -353,16 +353,16 @@
  
                  .date {
                      display: table-cell;
-                     font-size: 13px;
+                     font-size: 26px;
                      font-weight: 600;
                      padding-right: 40px;
                  }
  
                  .label {
                      display: table-cell;
-                     font-size: 11px;
+                     font-size: 22px;
                      height: 15px;
-                     width: 80px;
+                     padding: 0 10px;
                  }
                  .text {
                      line-height: 1.4em;
@@ -375,7 +375,7 @@
              border: 1px solid $BORDER-COLOR;
              color: $SITE-COLOR;
              display: table;
-             font-size: 14px;
+             font-size: 28px;
              font-weight: 600;
              margin: 35px auto 0;
              padding: 15px 0;
@@ -383,16 +383,16 @@
              width: 100%;
  
              &::after {
-                 border-top: 2px solid $SITE-COLOR;
-                 border-right: 2px solid $SITE-COLOR;
+                 border-top: 4px solid $SITE-COLOR;
+                 border-right: 4px solid $SITE-COLOR;
                  content: '';
                  display: inline-block;
-                 height: 8px;
+                 height: 15px;
                  position: absolute;
                  top: 20px;
                  transform: rotate(45deg);
                  right: 20px;
-                 width: 8px;
+                 width: 15px;
              }
              
              > span {
