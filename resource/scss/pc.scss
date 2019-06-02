@@ -4,8 +4,7 @@
 
  //変数インポート
 @import 'common_variable.scss';
-$ROTATE_NUM: 20deg;
-$SITE-WIDTH: 1440px;//1440
+$SITE-WIDTH: 1440px;//100%表示でできるように修正したい
 
 body {
     background-color: #fff;
@@ -15,7 +14,11 @@ body {
         height: 110px;
     }
     article {
-
+        .content {
+            margin: 0 auto;
+            text-align: center;
+            width: $SITE-WIDTH;
+        }
     }
     footer {
 
@@ -23,6 +26,9 @@ body {
 }
 
 /** pc共通クラス **/
+.pc_dn {
+    display: none;
+}
 a {
     cursor: pointer;
     display: inline-block;
@@ -172,17 +178,6 @@ header {
         }
     }
 }// /header
-
-// ** メインコンテンツ ** 
-article {
-    
-    // article共通
-    .content {
-        margin: 0 auto;
-        text-align: center;
-        width: $SITE-WIDTH;
-    }
-}
 
 // ** お客様ニーズ **
 .user_needs_box {

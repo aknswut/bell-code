@@ -5,14 +5,494 @@
  //変数インポート
 @import 'common_variable.scss';
 
-body {
-    svg {
-        background-color: #3b469a;
-        height: 73px;
-        width: 93px;
-    }
-    background-color: green;
-    p {
-        color: blue;
-    }
+ 
+ body {
+     background-color: #fff;
+ 
+     header {
+         height: 65px;
+     }
+
+     .content {
+         margin: 0 auto;
+         width: 90vw;
+     }
+     article {
+        .content {
+            text-align: center;
+        }
+     }
+     footer {
+ 
+     }
+ }
+ 
+ /** sp共通クラス **/
+
+.sp_dn {
+    display: none;
 }
+ 
+ h2 {
+     font-size: 24px;
+     font-weight: 400;
+     margin: 0;
+     padding: 30px;
+     position: relative;
+     text-align: center;
+ 
+     &::before {
+         background-color: #e60019;
+         bottom: 0;
+         content: '';
+         display: inline-block;
+         height: 1px;
+         position: absolute;
+         left: 50%;
+         transform: translateX(-50%);
+         -webkit-transform: translateX(-50%);
+         width: 24px;
+         
+     }
+ }
+ /** sp共通クラス **/
+ 
+ // ** 背景 **
+ section {
+     // お客様ニーズ
+     .needs_cont_bg {
+         overflow: hidden;
+         padding-bottom: 40px;
+         position: relative;   
+     
+         &::before {
+             background-color: #e6e7f2;
+             content: '';
+             height: 120%;
+             transform: skewX(-45deg);
+             transform-origin: top left;
+             position: absolute;
+             z-index: -1;
+         }
+     }
+     //  製品・サービス
+     &.product_box {
+         background-color: #dfe0e5;
+         margin-top: -70px;
+         padding-bottom: 100px;
+         position: relative;
+         transform: skewY(4deg);
+ 
+         .product_box_wrap {
+             background-color: #f5f5f5;
+             height: 100%;
+             left: 721px;
+             position: absolute;
+             transform: skewX(-26deg);
+             transform-origin: top left;
+         }
+     }  
+ }
+ 
+ // ** header **
+ header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+
+    .header_content {
+            
+    }
+ }// /header
+ 
+ // ** お客様ニーズ **
+ .user_needs_box {
+ 
+     .cont_txt {
+         font-size: 14px;
+         font-weight: 600;
+         margin: 30px 0 50px;
+     }
+ 
+     //リスト
+     .needs_list {
+         background-color: #fdfdfd;
+         border: 1px solid $BORDER-COLOR;
+         border-collapse: collapse;
+         border-spacing: 0;
+         box-sizing: border-box;
+         width: 90.5vw;
+ 
+         .list_line + .list_line {
+             border-top: 1px solid $BORDER-COLOR;  
+         }
+ 
+         .list + .list {
+             border-left: 1px solid $BORDER-COLOR;
+         }
+ 
+         .list { 
+             height: 111px;
+             text-align: center;
+ 
+             .list_link {
+                 display: block;
+                 
+                 >svg {
+                     fill: $SITE-COLOR;
+                     transform: scale(0.8);                    
+                 }
+             }
+ 
+             .list_txt {
+                 color: $SITE-COLOR;
+                 font-size: 11px;
+                 font-weight: 600;                           
+             }
+         }
+     }
+ } 
+ 
+ // ** 特集 **
+ .feature_box {
+     height: 600px;
+     position: relative;
+ 
+     .feature_bg {
+         position: absolute;
+     }
+ 
+     .cont_title {
+         color: #fff;
+         padding-top: 140px;
+     }
+ }
+ 
+ // ** 製品・サービス **
+ .product_box {
+     .list {
+         font-size: 12px;
+     }
+     .content {
+         transform: skewY(-4deg);
+     }
+ 
+     .product_list_box {
+         margin-top: 55px;
+         text-align: left;
+         vertical-align: top;
+ 
+          .title_it
+         ,.title_solution
+         ,.title_service {
+             display: table;
+             height: 160px;
+             margin: 0;
+             width: 100%;
+ 
+             >span {
+                 color: #fff;
+                 display: table-cell;
+                 font-size: 17px;
+                 padding: 0 0 20px 20px;
+                 vertical-align: bottom;
+             }
+         }
+ 
+         .title_it {
+             background: url(../img/sp/product_list_it.png) no-repeat;
+             background-size: cover;
+         }
+ 
+         .title_solution {
+             background: url(../img/sp/product_list_solution.png) no-repeat;
+             background-size: cover;
+         }
+ 
+         .title_service {
+             background: url(../img/sp/product_list_service.png) no-repeat;
+             background-size: cover;
+         }
+ 
+         .sub_title {
+             background-color: #fafafb;
+             border-bottom: 1px solid $BORDER-COLOR;
+             border-top: 1px solid $BORDER-COLOR;
+             color: $SITE-COLOR;
+             font-size: 14px;
+             font-weight: 600;
+             margin: 0;
+             padding: 12.5px 20px; 
+             position: relative;
+
+             &+ .sub_title {
+                 border-top: none;
+             }
+
+             &::after {
+                border-top: 2px solid $SITE-COLOR;
+                border-right: 2px solid $SITE-COLOR;
+                content: '';
+                display: inline-block;
+                height: 8px;
+                position: absolute;
+                top: 17px;
+                transform: rotate(135deg);
+                right: 19px;
+                width: 8px;
+            }
+         }
+ 
+         .list_more {
+             background-color: #fff;
+             border-bottom: 1px solid $BORDER-COLOR;
+             font-size: 14px;
+             font-weight: 600;
+             text-align: center;
+             padding: 25px 0;
+             position: relative;
+ 
+             >a {
+                 color: $SITE-COLOR;
+             }
+ 
+             &::after {
+                 border-top: 2px solid $SITE-COLOR;
+                 border-right: 2px solid $SITE-COLOR;
+                 content: '';
+                 display: inline-block;
+                 height: 8px;
+                 position: absolute;
+                 top: 30px;
+                 transform: rotate(45deg);
+                 right: 22px;
+                 width: 8px;
+             }
+         }
+ 
+         .list_box {
+             background-color: #fff;
+ 
+             .list {
+                 font-size: 13px;
+                 padding: 8px 20px;
+                 position: relative;
+
+                 &+ .list {
+                    border-top: 1px solid $BORDER-COLOR;
+                 }
+ 
+                 &::after {
+                     border-top: 1px solid $SITE-COLOR;
+                     border-right: 1px solid $SITE-COLOR;
+                     content: '';
+                     display: inline-block;
+                     height: 5px;
+                     position: absolute;
+                     top: 19px;
+                     transform: rotate(45deg);
+                     right: 23px;
+                     width: 5px;
+                 }
+             }
+             .product_list {
+                 line-height: 1.7em;   
+             }
+         }
+     }
+ }
+ 
+ // ** お知らせセミナー情報 **
+ .news_box {
+     transform: skewY(4deg);
+ 
+     .content {
+         transform: skewY(-4deg);
+ 
+         h2 {
+             margin-top: 50px;
+         }
+ 
+         .news_list_box {
+             border-bottom: 1px solid $BORDER-COLOR;
+             margin: 30px auto 0;
+ 
+             li {
+                 display: table;
+                 font-size: 13px;
+                 padding: 10px 0 5px;
+                 position: relative;
+                 text-align: left;
+                 width: 100%;
+
+                 &:first-child {
+                     padding-top: 0;
+                 }
+ 
+                 &::after {
+                     border-top: 2px solid $SITE-COLOR;
+                     border-right: 2px solid $SITE-COLOR;
+                     content: '';
+                     display: inline-block;
+                     height: 8px;
+                     position: absolute;
+                     top: 45%;
+                     transform: rotate(45deg);
+                     right: 6px;
+                     width: 8px;
+                 }
+ 
+                 & + li {
+                     border-top: 1px solid $BORDER-COLOR;
+                 }
+ 
+                 a {
+                     width: 100%;
+                 }
+ 
+                 .date {
+                     display: table-cell;
+                     font-size: 13px;
+                     font-weight: 600;
+                     padding-right: 40px;
+                 }
+ 
+                 .label {
+                     display: table-cell;
+                     font-size: 11px;
+                     height: 15px;
+                     width: 80px;
+                 }
+                 .text {
+                     line-height: 1.4em;
+                     margin-top: 5px;
+                     width: 95%;
+                 }
+             }
+         }
+         .more_btn {
+             border: 1px solid $BORDER-COLOR;
+             color: $SITE-COLOR;
+             display: table;
+             font-size: 14px;
+             font-weight: 600;
+             margin: 35px auto 0;
+             padding: 15px 0;
+             position: relative;
+             width: 100%;
+ 
+             &::after {
+                 border-top: 2px solid $SITE-COLOR;
+                 border-right: 2px solid $SITE-COLOR;
+                 content: '';
+                 display: inline-block;
+                 height: 8px;
+                 position: absolute;
+                 top: 20px;
+                 transform: rotate(45deg);
+                 right: 20px;
+                 width: 8px;
+             }
+             
+             > span {
+                 display: table-cell;
+                 vertical-align: middle;
+             }
+         }
+     }
+ }
+ 
+ // **footerの上にある画像スライド **
+ .bottom_img_box {
+     background: url(../img/sp/footer_background.png)no-repeat;
+     background-position-y: bottom;
+     background-size: cover;
+     height: 250px;
+     margin-top: 20px;
+     position: relative;
+     transform: skewY(6deg);
+     transform-origin: top left;
+     z-index: -1;
+ 
+     .content {
+         transform: skewY(-6deg);
+     }
+ }
+ 
+ footer {
+     .content {
+         margin: 0 auto;
+         padding: 40px 0;
+
+         h3 {
+            font-size: 14px;
+            line-height: 1;
+            position: relative;
+        }
+ 
+         .list_box {
+            border-top: 1px solid #394060;
+            border-bottom: 1px solid #394060;
+
+            &+ .list_box {
+                border-top: none;
+            }
+ 
+             ul {
+                 margin-top: 40px;
+                 line-height: 2em;
+                 padding-bottom: 10px;
+                 position: relative;
+
+                 &::before {
+                     background-color: #e60019;
+                     content: '';
+                     position: absolute;
+                     height: 1px;
+                     top: -20px;
+                     width: 15px;
+                 }
+             }
+             h3::after {
+                border-top: 2px solid #fff;
+                border-right: 2px solid #fff;
+                content: '';
+                display: inline-block;
+                height: 8px;
+                position: absolute;
+                top: 2px;
+                transform: rotate(135deg);
+                right: 20px;
+                width: 8px;
+            }
+         }
+     }
+ 
+     .footer_nav {
+         background-color: #fff;
+
+         .content {
+             padding: 0;
+         }
+            
+         ul {
+             font-size: 13px;
+             line-height: 2em;
+             padding: 20px 0;
+
+             a {
+                color: #000;
+            }
+         }
+         .copy_right {
+             border-top: 1px solid $BORDER-COLOR;
+             color: #9c9fa4;
+             font-size: 11px;
+             padding: 20px 0;
+             text-align: center;
+         }
+     }
+ }
+ 
+ 
