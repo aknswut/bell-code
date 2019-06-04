@@ -11,12 +11,12 @@
 		<script type="text/javascript">
 			if ((navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('iPad') == -1) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
 				// スマホやタブレットの場合
-				document.write('<link rel="stylesheet" type="text/css" href="resource/css/smp.css?v1">');
-				document.write('<script type="text/javascript" src="resource/js/pc.js"><\/script>');
+				document.write('<link rel="stylesheet" type="text/css" href="resource/css/smp.css?v2">');
+				document.write('<script type="text/javascript" src="resource/js/smp.js"><\/script>');
 			}else{
 				// PCの時
 				document.write('<link rel="stylesheet" type="text/css" href="resource/css/pc.css">');
-				document.write('<script type="text/javascript" src="resource/js/smp.js"><\/script>');
+				document.write('<script type="text/javascript" src="resource/js/pc.js"><\/script>');
 			}
 		</script>
 		<script type="text/javascript" src="resource/js/common.js"></script>
@@ -363,7 +363,7 @@
 
 						<h4 class="sub_title">サーバー</h4>
 						<div class="list_box_it">
-							<img src="resource/img/pc/server_img.png" width="80" height="80" class="list_img">
+							<img src="resource/img/pc/server_img.png" width="70" height="70" class="list_img">
 							<ul class="product_list">
 								<li class="list">I
 									<a href="">BM i (AS/400)</a>
@@ -382,7 +382,7 @@
 
 						<h4 class="sub_title">ストレージ</h4>
 						<div class="list_box_it">
-							<img src="resource/img/pc/storage_img.png" width="80" height="80" class="list_img">
+							<img src="resource/img/pc/storage_img.png" width="70" height="70" class="list_img">
 							<ul class="product_list">
 								<li class="list">I
 									<a href="">NAS</a>
@@ -410,7 +410,7 @@
 
 						<h4 class="sub_title">ハイパーコンバージド・サーバー</h4>
 						<div class="list_box_it">
-							<img src="resource/img/pc/server2_img.png" width="80" height="80" class="list_img">
+							<img src="resource/img/pc/server2_img.png" width="70" height="70" class="list_img">
 							<ul class="product_list">
 								<li class="list">I
 									<a href="">Nutanix</a>
@@ -823,7 +823,7 @@
 		<footer>
 			<!-- 青背景の部分 -->
 			<div class="content">
-				<div class="list_box sp_dn">
+				<div class="list_box pc_dn">
 					<h3>TEST</h3>
 					<ul>
 						<li>
@@ -1017,29 +1017,33 @@
 
 			<!-- 白背景の部分 -->
 			<div class="footer_nav sp_dn">
-				<ul>
-					<li>
-						<a href="">個人情報保護について</a>
-					</li>
-					<li>
-						<a href="">セキュリティ体制について</a>
-					</li>
-					<li>
-						<a href="">HDDおよびSSDSSDの取扱いについて</a>
-					</li>
-				</ul>
-				<ul>
-					<li>
-						<a href="">マイナンバーの取り扱いについて</a>
-					</li>
-					<li>
-						<a href="">GDPRに対する取り扱いについて</a>
-					</li>
-					<li>
-						<a href="">サイトのご利用に当たって</a>
-					</li>
-				</ul>
-				<p class="copy_right">Copyright © BELLDATA, Inc. All Rights Reserved.</p>		
+				<div class="content">
+					<div class="left_box">
+						<ul>
+							<li>
+								<a href="">個人情報保護について</a>
+							</li>
+							<li>
+								<a href="">セキュリティ体制について</a>
+							</li>
+							<li>
+								<a href="">HDDおよびSSDSSDの取扱いについて</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="">マイナンバーの取り扱いについて</a>
+							</li>
+							<li>
+								<a href="">GDPRに対する取り扱いについて</a>
+							</li>
+							<li>
+								<a href="">サイトのご利用に当たって</a>
+							</li>
+						</ul>
+					</div>
+					<p class="copy_right">Copyright © BELLDATA, Inc. All Rights Reserved.</p>		
+				</div>
 			</div>
 
 			<!-- 白背景の部分 -->
@@ -1069,6 +1073,8 @@
 				<p class="copy_right">Copyright © BELLDATA, Inc. All Rights Reserved.</p>		
 			</div>
 		</footer>
+
+		<div class="scroll _scroll_top"></div>
 
 	</body>
 </html>

@@ -1,1 +1,1 @@
-"use strict";var testFunk=function(){console.log("ap")};
+"use strict";window.addEventListener("DOMContentLoaded",function(){var n,t;n=document.getElementsByClassName("_scroll_top")[0],t={scrollTop:function(){var o,n=window.pageYOffset;window.scrollTo(0,n-100),0<=n&&0==!n?o=setTimeout(function(){t.scrollTop()},.01):clearTimeout(o)},scrollBtn:function(){var o=window.pageYOffset;n.style.opacity=200<o?1:0}},n.addEventListener("click",function(){t.scrollTop()}),window.addEventListener("scroll",function(){t.scrollBtn()})});

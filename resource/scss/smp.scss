@@ -30,7 +30,7 @@
  /** sp共通クラス **/
 
 .sp_dn {
-    display: none;
+    display: none!important;
 }
  
  h2 {
@@ -223,7 +223,7 @@
              font-size: 14px;
              font-weight: 600;
              margin: 0;
-             padding: 12.5px 20px; 
+             padding: 25px 20px; 
              position: relative;
 
              &+ .sub_title {
@@ -237,7 +237,7 @@
                 display: inline-block;
                 height: 20px;
                 position: absolute;
-                top: 27%;
+                top: 32%;
                 transform: rotate(135deg);
                 right: 40px;
                 width: 20px;
@@ -276,7 +276,7 @@
  
              .list {
                  font-size: 13px;
-                 padding: 8px 20px;
+                 padding: 16px 20px;
                  position: relative;
 
                  &+ .list {
@@ -297,7 +297,7 @@
                  }
              }
              .product_list {
-                 line-height: 1.7em;   
+                 line-height: 1.7em;  
              }
          }
      }
@@ -426,7 +426,7 @@
          padding: 40px 0;
 
          h3 {
-            font-size: 14px;
+            font-size: 28px;
             line-height: 1;
             position: relative;
         }
@@ -440,8 +440,8 @@
             }
  
              ul {
-                 margin-top: 40px;
-                 line-height: 2em;
+                 margin-top: 60px;
+                 line-height: 6em;
                  padding-bottom: 10px;
                  position: relative;
 
@@ -451,20 +451,20 @@
                      position: absolute;
                      height: 1px;
                      top: -20px;
-                     width: 15px;
+                     width: 30px;
                  }
              }
              h3::after {
-                border-top: 2px solid #fff;
-                border-right: 2px solid #fff;
+                border-top: 4px solid #fff;
+                border-right: 4px solid #fff;
                 content: '';
                 display: inline-block;
-                height: 8px;
+                height: 20px;
                 position: absolute;
-                top: 2px;
+                top: 1%;
                 transform: rotate(135deg);
                 right: 20px;
-                width: 8px;
+                width: 20px;
             }
          }
      }
@@ -477,8 +477,8 @@
          }
             
          ul {
-             font-size: 13px;
-             line-height: 2em;
+             font-size: 26px;
+             line-height: 4em;
              padding: 20px 0;
 
              a {
@@ -493,6 +493,28 @@
              text-align: center;
          }
      }
+ }
+
+ .scroll {
+     background-color: #080e34;
+     bottom: 90px;
+     height: 90px;
+     left: 82vw;
+     position: sticky;
+     width: 90px;
+
+     &::after {
+        border-top: 4px solid #fff;
+        border-right: 4px solid #fff;
+        content: '';
+        display: inline-block;
+        height: 30px;
+        position: absolute;
+        top: 37px;
+        transform: rotate(-45deg);
+        right: 27px;
+        width: 30px;
+    }
  }
  
  

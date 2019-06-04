@@ -4,7 +4,7 @@
 
  //変数インポート
 @import 'common_variable.scss';
-$SITE-WIDTH: 1440px;//100%表示でできるように修正したい
+$SITE-WIDTH: 100%;//100%表示でできるように修正したい
 
 body {
     background-color: #fff;
@@ -17,17 +17,14 @@ body {
         .content {
             margin: 0 auto;
             text-align: center;
-            width: $SITE-WIDTH;
+            width: 90%;
         }
-    }
-    footer {
-
     }
 }
 
 /** pc共通クラス **/
 .pc_dn {
-    display: none;
+    display: none!important;
 }
 a {
     cursor: pointer;
@@ -270,7 +267,7 @@ header {
         margin-top: 55px;
         text-align: left;
         vertical-align: top;
-        width: 384px;
+        width: 30%;
 
         & + .product_list_box {
             margin-left: 50px;
@@ -346,7 +343,7 @@ header {
             border-bottom: 1px solid $BORDER-COLOR;
             display: flex;
             justify-content: space-between;
-            padding: 20px 15px 25px;
+            padding: 20px 10px 25px;
             
             .list_img {
                 display: inline-block;
@@ -564,19 +561,18 @@ header {
 }
 
 footer {
-    height: 527px;
     
     .content {
         margin: 0 auto;
         padding: 40px 0;
-        width: $SITE-WIDTH;
+        width: 90%;
 
         .list_box {
             display: inline-block;
             height: 447px;
             padding-left: 25px;
             vertical-align: top;
-            width: 209px;
+            width: 17%;
 
             h3 {
                 line-height: 1;
@@ -605,13 +601,18 @@ footer {
     .footer_nav {
         align-items: center;
         background-color: #fff;
-        display: flex;
-        justify-content: space-between;
         margin: 0 auto;
         padding: 20px 0;
         width: $SITE-WIDTH;
-           
+        
+        .content {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+
         ul {
+            white-space: nowrap;
 
             &+ ul {
                 margin-top: 10px;
@@ -643,3 +644,24 @@ footer {
     }
 }
 
+.scroll {
+    background-color: #080e34;
+    bottom: 50px;
+    height: 45px;
+    left: 90vw;
+    position: sticky;
+    width: 45px;
+
+    &::after {
+       border-top: 2px solid #fff;
+       border-right: 2px solid #fff;
+       content: '';
+       display: inline-block;
+       height: 15px;
+       position: absolute;
+       top: 19px;
+       transform: rotate(-45deg);
+       right: 14px;
+       width: 15px;
+   }
+}
